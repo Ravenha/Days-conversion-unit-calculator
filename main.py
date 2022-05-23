@@ -1,5 +1,3 @@
-
-
 def days_to_units(number_of_days, conversion_unit):
     if conversion_unit == "hours":
         return f"{number_of_days} days are {number_of_days * 24} hours"
@@ -9,6 +7,7 @@ def days_to_units(number_of_days, conversion_unit):
         return f"{number_of_days} days are {number_of_days * 24 * 60 * 60} seconds"
     else:
         return "Unsupported Unit"
+
 
 def validate_and_execute():
     try:
@@ -22,7 +21,6 @@ def validate_and_execute():
             print("Your input is invalid. Please enter a whole number.")
     except ValueError:
         print("Your input is invalid. Please enter a whole number.")
-
 
 
 user_input = ""
